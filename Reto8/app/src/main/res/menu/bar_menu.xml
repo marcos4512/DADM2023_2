@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/more"
+        android:title="Options"
+        android:icon="@drawable/menu"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/newCompany"
+                android:title="Crear empresa"
+                android:icon="@drawable/new_icon" />
+            <item android:id="@+id/companyList"
+                android:title="Ver listado de empresas"
+                android:icon="@drawable/listado" />
+            <item android:id="@+id/quit"
+                android:title="Quit"
+                android:icon="@drawable/quit" />
+        </menu>
+
+    </item>
+</menu>
