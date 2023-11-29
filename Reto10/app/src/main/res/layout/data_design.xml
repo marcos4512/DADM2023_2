@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1,2,3,4,5,6">
+
+    <TableRow
+        android:gravity="center">
+        <TextView
+            android:id="@+id/gender_tv"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_column="1"
+            />
+
+        <TextView
+            android:id="@+id/weight_tv"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_column="1"
+            />
+
+        <TextView
+            android:id="@+id/size_tv"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_column="1"
+            />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_column="1"
+            />
+
+        <TextView
+            android:id="@+id/mom_age_tv"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_column="1"
+            />
+
+        <TextView
+            android:id="@+id/dad_age_tv"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_column="1"
+            />
+    </TableRow>
+
+</TableLayout>

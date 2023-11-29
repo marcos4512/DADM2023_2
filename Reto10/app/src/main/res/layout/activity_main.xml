@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="132dp"
+        android:layout_height="52dp"
+
+        android:layout_marginStart="19dp"
+
+        android:layout_marginTop="64dp"
+        android:hint="@string/hint_gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_genero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textSize="8sp">
+
+        </AutoCompleteTextView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/editTextMom"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="26dp"
+        android:background="@color/blue_sky"
+        android:ems="10"
+        android:hint="@string/hint_mom_age"
+        android:inputType="phone|number"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDad"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDad"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/blue_sky"
+        android:ems="10"
+        android:hint="@string/hint_dad_age"
+        android:inputType="phone|number"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clean_button"
+        android:layout_width="137dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Limpiar filtros"
+        android:onClick="onClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="135dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Buscar"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:stretchColumns="1,2,3,4,5,6"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:text="Género"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_column="1"
+                />
+
+            <TextView
+                android:text="Peso"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_column="1"
+                />
+
+            <TextView
+                android:text="Talla"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_column="1"
+                />
+
+            <TextView
+                android:text="Hora"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_column="1"
+                />
+
+            <TextView
+                android:text="Edad Madre"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_column="1"
+                />
+
+            <TextView
+                android:text="Edad Padre"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:layout_column="1"
+                />
+
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dataList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9" />
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Consumidor</string>
+    <string name="hint_gender">Genero</string>
+    <string name="hint_mom_age">Edad de la Madre</string>
+    <string name="hint_dad_age">Edad del Padre</string>
+    <string name="borns_json_url">https://datos.gov.co/resource/26g4-ekt3.json</string>
+</resources>
